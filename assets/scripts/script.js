@@ -1,4 +1,4 @@
-    const buttonShow = document.querySelector("#display");
+const buttonShow = document.querySelector("#display");
 const buttonClose = document.querySelector("dialog button");
 const modal = document.querySelector("dialog");
 
