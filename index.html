@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Height Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Delabenetta">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+</head>
+<body>
+    <main class="display-grid">
+        <div id="content-left">
+            <h1 class="title">Calculadora de Altura</h1>        
+            <div id="height-input">
+                <label for="height" class="text-emphasis">Insira a sua altura abaixo:</label>
+                <div id="input-buttons">
+                    <div id="data-input">
+                        <input type="text" id="height" name="height" class="text-normal">
+                        <span class="text-normal">cm</span>
+                    </div>
+                    <button id="display" class="text-normal">Ok</button>
+                </div>                
+            </div>
+
+            <dialog>          
+                <p class="text-normal">Sua altura!</p>
+                <button class="text-normal">Legal!</button>
+            </dialog>
+
+            <p class="text-alert">Atenção: o valor deve ser inserido na unidade de medida especificada.</p>            
+        </div>
+        <div id="content-right">
+            <img src="./assets/images/illustration-height.svg" alt="illustration">
+        </div>
+    </main>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
