@@ -109,6 +109,14 @@ body {
     border-radius: 25px;
 }
 
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 #data-input input {
     color: var(--dark);
     text-align: center;
@@ -145,13 +153,24 @@ body {
 /* Modal */
 
 dialog {
-    top: 25px;
-    left: 50px;
+    top: 10px;
+    left: 20px;
     align-items: center;
     width: 465px;
     height: 185px;
     border-radius: 25px;
     background-color: var(--orange-dark);
+    animation: test 200ms ease-out;
+}
+
+@keyframes test {
+    from {
+        left: -400px;
+    }
+
+    to {
+        left: 20px;
+    }
 }
 
 dialog p {
